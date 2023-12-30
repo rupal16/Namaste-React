@@ -1,0 +1,25 @@
+{
+  "name": "namaste-react-notes",
+  "version": "1.0.0",
+  "description": "Namaste React Notes",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rupal16/Namaste-React.git"
+  },
+  "keywords": [
+    "react-notes"
+  ],
+  "author": "Rupal Jain",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rupal16/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/rupal16/Namaste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}
