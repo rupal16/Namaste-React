@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
-import About from './components/About';
+// import About from './components/About';
 import Contact from './components/Contact';
 import Error from './components/Error';
 import Header from './components/Header';
@@ -19,7 +19,10 @@ import Home from './components/Home';
 
 // console.log(parent )
 
+const About = lazy(() => import('./components/About'))
 const App = () => {
+
+
     return (
         <div>
             <Header />
@@ -39,7 +42,7 @@ const appRouter = createBrowserRouter([
             },
             {
                 path: '/about',
-                element: <About />
+                element: <Suspense fallback={<h1>Loading about ...</h1>}><About /></Suspense>,
             },
             {
                 path: '/contact',

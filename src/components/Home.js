@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom";
+
 const Home = () => {
     return (
-        <div>Welcome to Home Page</div>
+        <div>
+            <div>Home section</div>
+            <Link to={'/about'}>About </Link>
+        </div>
+
     )
 }
 
